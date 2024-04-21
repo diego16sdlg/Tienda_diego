@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Diego - Bebidas con Gas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>¡Bienvenido a Tienda Diego :v!</h1>
+    <p>Las mejores gaseosas a solo un click.</p>
 
+    <h2>Ingresa tu nombre:</h2>
+    <input type="text" id="nombreUsuario" placeholder="Tu nombre aquí">
+
+    <h2>Elige tu  gaseosa :</h2>
+    <select id="bebidaSeleccionada">
+        <option value="">Selecciona una bebida</option>
+        <option value="cocacola">Coca-Cola $3.00</option>
+        <option value="pepsi">Pepsi $3.00</option>
+        <option value="sprite">Sprite $3.00</option>
+        <option value="fanta">Fanta $3.00</option>
+        <option value="guarana">Guaraná $3.00</option>
+    </select>
+
+    <button onclick="mostrarResumen()">Comprar</button>
+
+    <div id="resumenCompra" style="display: none;">
+        <h2>Resumen de tu compra:</h2>
+        <p>Nombre: <span id="nombreResumen"></span></p>
+        <p>Bebida: <span id="bebidaResumen"></span></p>
+        <p>Total: S/. 3.00</p>
+    </div>
+
+    <script src="tienda_1.js"></script>
+</body>
+</html>
